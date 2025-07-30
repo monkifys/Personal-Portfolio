@@ -923,6 +923,8 @@ function downloadResume(format) {
 }
 
 function viewResumeOnline() {
+    // Remove any existing modal before creating a new one
+    closeResumeModal();
     // Create a modal to display the resume
     const modal = document.createElement('div');
     modal.className = 'resume-modal';
@@ -935,26 +937,23 @@ function viewResumeOnline() {
             <div class="resume-modal-body">
                 <div class="resume-section">
                     <h3>Contact Information</h3>
-                    <p><strong>Email:</strong> your.email@example.com</p>
-                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <p><strong>Email:</strong> mahapatrasankha8@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 74773 62785</p>
                     <p><strong>Location:</strong> India</p>
                 </div>
-                
                 <div class="resume-section">
                     <h3>Education</h3>
                     <p><strong>Bachelor of Technology</strong></p>
-                    <p>Computer Science & Engineering</p>
-                    <p><em>2020 - 2024</em></p>
+                    <p>Electronics & Communication Engineering</p>
+                    <p><em>2023 - 2027</em></p>
                 </div>
-                
                 <div class="resume-section">
                     <h3>Achievements</h3>
                     <ul>
-                        <li><strong>National Space Hackathon Winner</strong> - IIT Delhi & ISRO (2023)</li>
-                        <li><strong>Smart India Hackathon Finalist</strong> - Government of India (2023)</li>
+                        <li><strong>National Space Hackathon Winner</strong> - IIT Delhi & ISRO (2025)</li>
+                        <li><strong>Smart India Hackathon Finalist</strong> - Government of India (2024)</li>
                     </ul>
                 </div>
-                
                 <div class="resume-section">
                     <h3>Technical Skills</h3>
                     <div class="skill-bars">
@@ -995,7 +994,6 @@ function viewResumeOnline() {
                         </div>
                     </div>
                 </div>
-                
                 <div class="resume-section">
                     <h3>Projects</h3>
                     <ul>
@@ -1006,7 +1004,6 @@ function viewResumeOnline() {
             </div>
         </div>
     `;
-    
     // Add modal styles
     const modalStyle = document.createElement('style');
     modalStyle.textContent = `
@@ -1023,140 +1020,92 @@ function viewResumeOnline() {
             z-index: 10000;
             animation: fadeIn 0.3s ease;
         }
-        
         .resume-modal-content {
-            background: var(--card-bg);
-            border-radius: 20px;
-            max-width: 800px;
-            width: 90%;
-            max-height: 90vh;
-            overflow-y: auto;
-            box-shadow: var(--shadow-hover);
-            animation: slideInUp 0.3s ease;
+            background: #fff;
+            border-radius: 16px;
+            max-width: 600px;
+            width: 95%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+            overflow: hidden;
+            animation: slideUp 0.3s cubic-bezier(.4,2,.6,1) 1;
         }
-        
         .resume-modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 1.2rem 1.5rem;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 2rem;
-            border-bottom: 1px solid var(--border-color);
+            justify-content: space-between;
         }
-        
         .resume-modal-header h2 {
-            color: var(--text-primary);
-            margin: 0;
+            font-size: 1.3rem;
+            font-weight: 600;
         }
-        
         .resume-modal-close {
             background: none;
             border: none;
+            color: #fff;
             font-size: 2rem;
-            color: var(--text-secondary);
             cursor: pointer;
-            padding: 0;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            transition: all 0.3s ease;
+            padding: 0 0.5rem;
         }
-        
-        .resume-modal-close:hover {
-            background: var(--accent-color);
-            color: var(--text-light);
-        }
-        
         .resume-modal-body {
-            padding: 2rem;
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
         }
-        
         .resume-section {
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
-        
+        .resume-section:last-child {
+            margin-bottom: 0;
+        }
         .resume-section h3 {
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-        
-        .resume-section p, .resume-section li {
-            color: var(--text-primary);
-            line-height: 1.6;
+            font-size: 1.1rem;
             margin-bottom: 0.5rem;
+            color: #667eea;
         }
-        
         .skill-bars {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 0.7rem;
         }
-        
         .skill-bar {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.7rem;
         }
-        
-        .skill-bar span:first-child {
-            min-width: 80px;
-            color: var(--text-primary);
-            font-weight: 500;
-        }
-        
         .skill-progress {
             flex: 1;
-            height: 8px;
-            background: var(--border-color);
-            border-radius: 4px;
+            background: #eee;
+            border-radius: 8px;
+            height: 10px;
             overflow: hidden;
         }
-        
         .skill-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
             height: 100%;
-            background: linear-gradient(90deg, var(--accent-color), var(--accent-secondary));
-            border-radius: 4px;
-            transition: width 1s ease;
+            border-radius: 8px;
+            transition: width 1s cubic-bezier(.4,2,.6,1);
         }
-        
-        .skill-bar span:last-child {
-            min-width: 40px;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-        
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-        
-        @keyframes slideInUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        @keyframes slideUp {
+            from { transform: translateY(60px); }
+            to { transform: translateY(0); }
         }
-        
         @media (max-width: 768px) {
             .resume-modal-content {
-                width: 95%;
+                width: 98%;
                 margin: 1rem;
             }
-            
-            .resume-modal-header {
-                padding: 1rem;
-            }
-            
-            .resume-modal-body {
+            .resume-modal-header, .resume-modal-body {
                 padding: 1rem;
             }
         }
     `;
-    
     document.head.appendChild(modalStyle);
     document.body.appendChild(modal);
-    
     // Animate skill bars
     setTimeout(() => {
         const skillFills = modal.querySelectorAll('.skill-fill');
