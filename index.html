@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portfolio - Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animated"></div>
+    <!-- Loading Screen, Scroll Progress, and Particles - Removed for professional appearance -->
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-sun light-icon"></i>
+                    <i class="fas fa-moon dark-icon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm Sankha Singhamahapatra</h1>
+                    <p class="hero-subtitle">AI-Powered Creative Developer</p>
+                    <p class="hero-description">
+                        Passionate about technology, innovation, and creating impactful solutions. 
+                        Winner of Smart India Hackathon and National Space Hackathon.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="profile-picture.jpg" alt="Sankha Singhamahapatra" class="profile-photo floating">
+                            <i class="fas fa-user-circle profile-icon"></i>
+                        </div>
+                        <div class="ai-indicator">
+                            <span class="ai-dot"></span>
+                            AI Enhanced
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I am a passionate developer with expertise in multiple programming languages and technologies. 
+                        My journey in technology has been marked by significant achievements in national-level hackathons, 
+                        where I've demonstrated innovative problem-solving skills and technical excellence.
+                    </p>
+                    <p class="about-description">
+                        With a strong foundation in C, C++, Python, Java, and JavaScript, I specialize in creating 
+                        intelligent solutions that bridge the gap between traditional software development and cutting-edge AI technologies.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2</h3>
+                            <p>National Hackathon Wins</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Programming Languages</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>AI-Powered Solutions</h3>
+                        </div>
+                        <p>Leveraging artificial intelligence to create innovative and efficient applications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-card" data-skill="C" data-level="90" data-description="Advanced proficiency in C programming with experience in system programming, algorithms, and embedded systems development.">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-cuttlefish"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>C Programming</h4>
+                                    <div class="skill-level">
+                                        <span class="level-badge expert">Expert</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <div class="skill-description">
+                                <p>Advanced proficiency in C programming with experience in system programming, algorithms, and embedded systems development.</p>
+                                <div class="skill-tags">
+                                    <span class="mini-tag">System Programming</span>
+                                    <span class="mini-tag">Algorithms</span>
+                                    <span class="mini-tag">Embedded Systems</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="C++" data-level="85" data-description="Strong object-oriented programming skills with experience in game development, system design, and performance optimization.">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>C++ Programming</h4>
+                                    <div class="skill-level">
+                                        <span class="level-badge advanced">Advanced</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <div class="skill-description">
+                                <p>Strong object-oriented programming skills with experience in game development, system design, and performance optimization.</p>
+                                <div class="skill-tags">
+                                    <span class="mini-tag">OOP</span>
+                                    <span class="mini-tag">Game Dev</span>
+                                    <span class="mini-tag">Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="Python" data-level="95" data-description="Expert-level Python programming with specialization in AI/ML, data science, web development, and automation.">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Python</h4>
+                                    <div class="skill-level">
+                                        <span class="level-badge expert">Expert</span>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <div class="skill-description">
+                                <p>Expert-level Python programming with specialization in AI/ML, data science, web development, and automation.</p>
+                                <div class="skill-tags">
+                                    <span class="mini-tag">AI/ML</span>
+                                    <span class="mini-tag">Data Science</span>
+                                    <span class="mini-tag">Web Dev</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="Java" data-level="80" data-description="Proficient in Java development with experience in enterprise applications, Android development, and backend services.">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>Java</h4>
+                                    <div class="skill-level">
+                                        <span class="level-badge intermediate">Intermediate</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <div class="skill-description">
+                                <p>Proficient in Java development with experience in enterprise applications, Android development, and backend services.</p>
+                                <div class="skill-tags">
+                                    <span class="mini-tag">Enterprise</span>
+                                    <span class="mini-tag">Android</span>
+                                    <span class="mini-tag">Backend</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-skill="JavaScript" data-level="88" data-description="Strong JavaScript skills with expertise in modern frameworks, frontend development, and full-stack applications.">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h4>JavaScript</h4>
+                                    <div class="skill-level">
+                                        <span class="level-badge advanced">Advanced</span>
+                                        <span class="skill-percentage">88%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                                <div class="skill-glow"></div>
+                            </div>
+                            <div class="skill-description">
+                                <p>Strong JavaScript skills with expertise in modern frameworks, frontend development, and full-stack applications.</p>
+                                <div class="skill-tags">
+                                    <span class="mini-tag">Frontend</span>
+                                    <span class="mini-tag">Frameworks</span>
+                                    <span class="mini-tag">Full-Stack</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Technologies & Tools
+                    </h3>
+                    <div class="tech-grid">
+                        <div class="tech-card" data-tech="React">
+                            <div class="tech-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React</h4>
+                            <div class="tech-level">
+                                <span class="level-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card" data-tech="Node.js">
+                            <div class="tech-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <div class="tech-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card" data-tech="MongoDB">
+                            <div class="tech-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>MongoDB</h4>
+                            <div class="tech-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card" data-tech="Git">
+                            <div class="tech-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git</h4>
+                            <div class="tech-level">
+                                <span class="level-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card" data-tech="Docker">
+                            <div class="tech-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h4>Docker</h4>
+                            <div class="tech-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card" data-tech="AWS">
+                            <div class="tech-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <h4>AWS</h4>
+                            <div class="tech-level">
+                                <span class="level-badge intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card" data-tech="Machine Learning">
+                            <div class="tech-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Machine Learning</h4>
+                            <div class="tech-level">
+                                <span class="level-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card" data-tech="Data Science">
+                            <div class="tech-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Data Science</h4>
+                            <div class="tech-level">
+                                <span class="level-badge advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-summary">
+                <div class="summary-card">
+                    <h3>Skill Overview</h3>
+                    <div class="summary-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Programming Languages</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Expert Level</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skill Graphs Section -->
+            <div class="skill-graphs">
+                <div class="graph-container">
+                    <h3 class="graph-title">
+                        <i class="fas fa-chart-radar"></i>
+                        Skills Radar Chart
+                    </h3>
+                    <div class="radar-chart-container">
+                        <canvas id="radarChart" width="400" height="400"></canvas>
+                        <div class="radar-labels">
+                            <div class="radar-label" style="--angle: 0deg">C/C++</div>
+                            <div class="radar-label" style="--angle: 72deg">Python</div>
+                            <div class="radar-label" style="--angle: 144deg">Java</div>
+                            <div class="radar-label" style="--angle: 216deg">JavaScript</div>
+                            <div class="radar-label" style="--angle: 288deg">React</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="graph-container">
+                    <h3 class="graph-title">
+                        <i class="fas fa-chart-bar"></i>
+                        Proficiency Levels
+                    </h3>
+                    <div class="bar-chart-container">
+                        <canvas id="barChart" width="400" height="300"></canvas>
+                    </div>
+                </div>
+                
+                <div class="graph-container">
+                    <h3 class="graph-title">
+                        <i class="fas fa-chart-pie"></i>
+                        Skill Distribution
+                    </h3>
+                    <div class="pie-chart-container">
+                        <canvas id="pieChart" width="300" height="300"></canvas>
+                        <div class="pie-legend">
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: linear-gradient(135deg, #667eea, #764ba2)"></span>
+                                <span>Expert (90%+)</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: linear-gradient(135deg, #f093fb, #f5576c)"></span>
+                                <span>Advanced (80-89%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: linear-gradient(135deg, #4facfe, #00f2fe)"></span>
+                                <span>Intermediate (70-79%)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Achievements</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>National Space Hackathon Winner</h3>
+                            <span class="timeline-date">2023</span>
+                        </div>
+                        <div class="timeline-subtitle">IIT Delhi & ISRO</div>
+                        <p class="timeline-description">
+                            Led the development of a Space Cargo Management System that revolutionized 
+                            how space agencies handle cargo logistics. The system incorporated AI algorithms 
+                            for optimal route planning and resource allocation.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Space Technology</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Smart India Hackathon Finalist</h3>
+                            <span class="timeline-date">2023</span>
+                        </div>
+                        <div class="timeline-subtitle">Government of India</div>
+                        <p class="timeline-description">
+                            Developed an innovative Solar Project Management System that optimizes solar 
+                            energy production and distribution. The project integrated IoT sensors and 
+                            machine learning for predictive maintenance.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Solar Energy</span>
+                            <span class="tag">C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Space Cargo Management System</h3>
+                        <p>AI-powered system for managing cargo logistics in space missions. Features include route optimization, resource allocation, and real-time tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Solar Project Management</h3>
+                        <p>Intelligent solar energy management system with IoT integration and predictive analytics for optimal energy production.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Portfolio Assistant</h3>
+                        <p>Intelligent chatbot that provides information about projects, skills, and experience. Built with natural language processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>National Space Hackathon Winner</h3>
+                        <p class="certification-issuer">IIT Delhi & ISRO</p>
+                        <p class="certification-description">First place in the prestigious national space technology competition</p>
+                        <span class="certification-date">2025</span>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Smart India Hackathon Finalist</h3>
+                        <p class="certification-issuer">Government of India</p>
+                        <p class="certification-description">Reached the final round in the largest hackathon in India</p>
+                        <span class="certification-date">2024</span>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Machine Learning Specialization</h3>
+                        <p class="certification-issuer">Coursera</p>
+                        <p class="certification-description">Comprehensive course on machine learning algorithms and applications</p>
+                        <span class="certification-date">2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <!-- Removed static resume preview. Only actions and features remain. -->
+                <div class="resume-actions">
+                    <div class="resume-download">
+                        <h3>Download My Resume</h3>
+                        <p>Get a detailed version of my resume in PDF format</p>
+                        <div class="download-buttons">
+                            <button class="btn btn-primary" onclick="downloadResume('pdf')">
+                                <i class="fas fa-download"></i> Download PDF
+                            </button>
+                            <button class="btn btn-secondary" onclick="viewResumeOnline()">
+                                <i class="fas fa-eye"></i> View Online
+                            </button>
+                        </div>
+                    </div>
+                    <div class="resume-features">
+                        <div class="feature-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <div>
+                                <h4>PDF Format</h4>
+                                <p>Professional layout, print-ready</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>Mobile Friendly</h4>
+                                <p>Optimized for all devices</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <div>
+                                <h4>Always Updated</h4>
+                                <p>Latest information included</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chatbot -->
+    <div class="ai-chatbot" id="aiChatbot">
+        <div class="chatbot-toggle" onclick="toggleChatbot()">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <h3>AI Portfolio Assistant</h3>
+                <button class="close-btn" onclick="toggleChatbot()">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <p>Hello! I'm your AI assistant. Ask me anything about my portfolio, projects, or skills!</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Ask me anything..." onkeypress="handleChatInput(event)">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>mahapatrasankha8@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 7477362785</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>India</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portfolio</h3>
+                    <p>AI-powered creative developer passionate about innovation and technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
