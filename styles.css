@@ -2159,3 +2159,33 @@ body > *:not(.background-animated) {
   50% { transform: translateY(-16px); }
   100% { transform: translateY(0); }
 } 
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  section, .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  button, .btn, input, textarea {
+    min-height: 44px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.3rem;
+  }
+  button, .btn, input, textarea {
+    min-height: 48px;
+    font-size: 1.05rem;
+  }
+} 
