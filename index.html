@@ -606,51 +606,31 @@
 
     <!-- Resume Section -->
     <section id="resume" class="resume">
-        <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume-content">
-                <!-- Removed static resume preview. Only actions and features remain. -->
-                <div class="resume-actions">
-                    <div class="resume-download">
-                        <h3>Download My Resume</h3>
-                        <p>Get a detailed version of my resume in PDF format</p>
-                        <div class="download-buttons">
-                            <button class="btn btn-primary" onclick="downloadResume('pdf')">
-                                <i class="fas fa-download"></i> Download PDF
-                            </button>
-                            <button class="btn btn-secondary" onclick="viewResumeOnline()">
-                                <i class="fas fa-eye"></i> View Online
-                            </button>
-                        </div>
+    <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-content">
+            <div class="resume-actions">
+                <div class="resume-download">
+                    <h3>Resume Download</h3>
+                    <p>Download my latest resume instantly in PDF format. Always up-to-date and ready for review.</p>
+                    <div class="download-buttons">
+                        <button class="btn btn-primary" onclick="downloadResume('pdf')">
+                            <i class="fas fa-file-download"></i> Download PDF
+                        </button>
+                        <button class="btn btn-secondary" onclick="viewResumeOnline()">
+                            <i class="fas fa-eye"></i> View Online
+                        </button>
                     </div>
-                    <div class="resume-features">
-                        <div class="feature-item">
-                            <i class="fas fa-file-pdf"></i>
-                            <div>
-                                <h4>PDF Format</h4>
-                                <p>Professional layout, print-ready</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <div>
-                                <h4>Mobile Friendly</h4>
-                                <p>Optimized for all devices</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-sync-alt"></i>
-                            <div>
-                                <h4>Always Updated</h4>
-                                <p>Latest information included</p>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="resume-benefits">
+                        <li><i class="fas fa-check-circle"></i> Professional PDF layout</li>
+                        <li><i class="fas fa-mobile-alt"></i> Mobile & desktop friendly</li>
+                        <li><i class="fas fa-sync-alt"></i> Always the latest version</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- AI Chatbot -->
     <div class="ai-chatbot" id="aiChatbot">
         <div class="chatbot-toggle" onclick="toggleChatbot()">
